@@ -1,0 +1,38 @@
+ [
+    {
+      "collegeName": "ABC College",
+      "studentName": "John Doe",
+      "studentImage": "https://example.com/student_images/john_doe.jpg",
+      "rating": 4.5,
+      "feedback": "I had a wonderful time at ABC College. The campus is beautiful, and the faculty is dedicated to helping students succeed."
+    },
+    {
+      "collegeName": "XYZ University",
+      "studentName": "Jane Smith",
+      "studentImage": "https://example.com/student_images/jane_smith.jpg",
+      "rating": 5.0,
+      "feedback": "XYZ University exceeded my expectations. The courses were engaging, and the career guidance was exceptional."
+    },
+    {
+      "collegeName": "EFG Institute",
+      "studentName": "Michael Johnson",
+      "studentImage": "https://example.com/student_images/michael_johnson.jpg",
+      "rating": 4.0,
+      "feedback": "I had a great experience at EFG Institute. The professors were knowledgeable, and the campus facilities were top-notch."
+    },
+    {
+      "collegeName": "LMN College",
+      "studentName": "Emily Williams",
+      "studentImage": "https://example.com/student_images/emily_williams.jpg",
+      "rating": 4.8,
+      "feedback": "LMN College provided a supportive learning environment. I made lifelong friends and learned valuable skills."
+    },
+    {
+      "collegeName": "PQR University",
+      "studentName": "Alex Lee",
+      "studentImage": "https://example.com/student_images/alex_lee.jpg",
+      "rating": 4.2,
+      "feedback": "I enjoyed my time at PQR University. The extracurricular activities and clubs added a lot of fun to my college life."
+    }
+  ]
+
