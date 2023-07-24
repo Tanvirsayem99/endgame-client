@@ -25,23 +25,23 @@ const router = createBrowserRouter([
                 path:"/singleCollage/:id",
                 element:<SingleCollage/>,
                 loader:({params})=>
-                fetch(`http://localhost:5000/collage/${params.id}`)
+                fetch(`https://endgame-task.vercel.app/collage/${params.id}`)
             },
             {
                 path: "/collages",
                 element: <Collages/>,
-                loader:()=> fetch("http://localhost:5000/collage")
+                loader:()=> fetch("https://endgame-task.vercel.app/collage")
             },
             {
                 path:"/admission",
                 element:<Admission/>,
-                loader:()=> fetch("http://localhost:5000/collage")
+                loader:()=> fetch("https://endgame-task.vercel.app/collage")
             },
             {
                 path:"/takeAdmission/:id",
                 element:<TakeAdmission/>,
                 loader:({params})=>
-                fetch(`http://localhost:5000/collage/${params.id}`)
+                fetch(`https://endgame-task.vercel.app/collage/${params.id}`)
 
             },
             {

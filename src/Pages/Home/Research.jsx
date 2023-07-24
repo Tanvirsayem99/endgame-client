@@ -11,7 +11,7 @@ const Research = () => {
     const[collages, setCollages]=useState([])
 
      useEffect(()=>{
-        fetch("http://localhost:5000/collage")
+        fetch("https://endgame-task.vercel.app/collage")
         .then(res => res.json())
         .then(data =>{
             console.log(data);

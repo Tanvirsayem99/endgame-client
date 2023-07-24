@@ -1,19 +1,18 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Routes/AuthProvider';
 import { Result } from 'postcss';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
-
+  const {handlesignUp, handleUpdateProfile}=useContext(AuthContext)
+  const navigate = useNavigate()
     const handleSubmit = event =>{
-
-        const {handlesignUp}=useContext(AuthContext)
-
-        event.preventdefault()
+        event.preventDefault()
 
         const from = event.target;
 
         const name = from.name.value;
-        console.log(name);
+        
         const email = from.email.value;
         const password = from.password.value;
         const photoUrl = from.photoUrl.value;
@@ -21,14 +20,14 @@ const SignUp = () => {
         handlesignUp(email, password)
         .then(result =>{
             const signupUser = result.user;
-            console.log(signupUser);
+            handleUpdateProfile(signupUser, name, photoUrl)
+            .then(result =>{
+              navigate('/')
+            })
         })
         .catch(erro =>{
             console.log(erro.message);
         })
-
-
-
     }
 
 
@@ -89,6 +88,7 @@ const SignUp = () => {
               // Add onChange and value attributes if needed
             />
           </div>
+          <p className='text-sky-600'>Already have an account? please <Link to="/login">Login</Link></p>
           {/* No need to include handleSubmit here */}
           <button
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200"
