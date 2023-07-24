@@ -6,7 +6,7 @@ const SignUp = () => {
 
     const handleSubmit = event =>{
 
-        const { handlesignUp}=useContext(AuthContext)
+        const {handlesignUp}=useContext(AuthContext)
 
         event.preventdefault()
 

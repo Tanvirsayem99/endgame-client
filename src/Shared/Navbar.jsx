@@ -14,8 +14,6 @@ const Navbar = () => {
      <li>Admission</li>
      </Link>
      <li>My Collage</li>
-
-    
     </>
     return (
         <div>
